@@ -21,7 +21,11 @@
       imports to files on disk
     */
     "rootDir": "./src",
+    "baseUrl": "./",
 
-    "types": ["ember-source/types", "@glint/ember-tsc/types"]
+    "types": ["ember-source/types", "@glint/ember-tsc/types", "vite/client"],
+    "paths": {
+      "@iarroyo/ember-addon-appreexports/*": ["src/*"]
+    }
   }
 }

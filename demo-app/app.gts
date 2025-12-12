@@ -1,6 +1,7 @@
 import EmberApp from 'ember-strict-application-resolver';
 import EmberRouter from '@ember/routing/router';
 import PageTitleService from 'ember-page-title/services/page-title';
+import { addonRegistry } from 'sample-addon/registry';
 
 class Router extends EmberRouter {
   location = 'history';
@@ -32,6 +33,7 @@ export class App extends EmberApp {
      * See: https://rfcs.emberjs.com/id/1132-default-strict-resolver
      */
     ...import.meta.glob('./templates/**/*', { eager: true }),
+    ...addonRegistry(),
   };
 }
 

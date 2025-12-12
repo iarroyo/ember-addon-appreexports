@@ -1,6 +1,6 @@
 {
-  "name": "ember-addon-appReexports",
-  "version": "0.0.0",
+  "name": "@iarroyo/ember-addon-appreexports",
+  "version": "0.0.1",
   "description": "The default blueprint for Embroider v2 addons.",
   "keywords": [
     "ember-addon"
@@ -46,7 +46,8 @@
   },
   "dependencies": {
     "@embroider/addon-shim": "^1.8.9",
-    "decorator-transforms": "^2.2.2"
+    "decorator-transforms": "^2.2.2",
+    "ember-modifier": "^4.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -98,6 +99,12 @@
   "ember-addon": {
     "version": 2,
     "type": "addon",
-    "main": "addon-main.cjs"
+    "main": "addon-main.cjs",
+    "app-js": {
+      "./components/hello.js": "./dist/_app_/components/hello.js",
+      "./helpers/concat.js": "./dist/_app_/helpers/concat.js",
+      "./modifiers/autofocus.js": "./dist/_app_/modifiers/autofocus.js",
+      "./services/text-encoder.js": "./dist/_app_/services/text-encoder.js"
+    }
   }
 }

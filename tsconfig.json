@@ -12,12 +12,16 @@
     "demo-app/**/*"
   ],
   "compilerOptions": {
+    "baseUrl": "./",
     "rootDir": ".",
     "types": [
       "ember-source/types",
       "vite/client",
       "@embroider/core/virtual",
       "@glint/ember-tsc/types"
-    ]
+    ],
+    "paths": {
+      "@iarroyo/ember-addon-appreexports/*": ["src/*"]
+    }
   }
 }

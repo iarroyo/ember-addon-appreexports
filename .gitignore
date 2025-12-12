@@ -15,3 +15,5 @@ ember-cli-build.cjs
 node_modules/
 .eslintcache
 .prettiercache
+
+.npmrc
