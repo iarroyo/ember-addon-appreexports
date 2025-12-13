@@ -1,7 +1,7 @@
 # compiled output
-dist/
+# dist/
 dist-tests/
-declarations/
+# declarations/
 
 # from scenarios
 tmp/
