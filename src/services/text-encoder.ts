@@ -1,6 +1,7 @@
 import Service from '@ember/service';
 class TextEncoderService extends Service {
   async encodeText(str: string, algorithm = 'SHA-256') {
+    console.log('text econder service from addon');
     const encoder = new TextEncoder();
     const data = encoder.encode(str);
     const hashBuffer = await crypto.subtle.digest(algorithm, data);

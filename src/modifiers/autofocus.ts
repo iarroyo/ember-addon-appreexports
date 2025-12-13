@@ -1,6 +1,7 @@
 import { modifier } from 'ember-modifier';
 
 const _autofocus = (element: HTMLElement) => {
+  console.log('autofocus from addon');
   element.focus();
 };
 
